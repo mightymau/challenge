@@ -17,24 +17,26 @@ function App() {
       </header>
       <main>
         <div className="profile-info">
-          <img className="profile-pic" src="./profile.png" alt="Profile Pic" />
-          <a href="#">Edit Profile</a>
-          <label for="full-name">Full Name</label>
-          <p id="full-name">super admin</p>
-          <label for="email">Email</label>
-          <p id="full-name">super@admin.com</p>
-          <div>
+          <img className="profile-pic" src="https://secure.gravatar.com/avatar/7063e4e3d83ca275f016542320d08abc?s=400&d=identicon&r=g" alt="Profile Pic" />
+          <div id="main-info">
+            <label for="full-name">Full Name</label>
+            <p id="full-name">super admin</p>
+            <label for="email">Email</label>
+            <p id="full-name">super@admin.com</p>
+            <a id="edit-profile" href="#">Edit Profile</a>
+          </div>
+          <div className="profile-options">
             <a href="#">Change Password</a>
           </div>
-          <div>
-            <label for="language">Select App Language</label>
+          <div className="profile-options">
+            <label id="language-options" for="language">Select App Language</label>
             <select name="language" id="language">
               <option>English</option>
             </select>
           </div>
-          <div>
+          <div className="profile-options last">
             <a href="#">Logout</a>
-            <span>
+            <span id="logout-options">
               <input type="checkbox" id="logoutAllDevices" name="logoutAllDevices" />
                 <label for="logoutAllDevices">Logout All Devices</label>
 
